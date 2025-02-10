@@ -5,8 +5,12 @@
 
 // root.appendChild(h1)
 
-const h1 = React.createElement("h1", {}, "Namaste React")
+const content = React.createElement("div", {}, [
+    React.createElement("h1", {}, "hlo"),
+    React.createElement("h2", {}, "hlo2")
+
+])
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-root.render(h1)
+root.render(content)
 
